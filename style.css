@@ -9,7 +9,7 @@
     .tabs {
       display: flex;
       justify-content: center;
-      margin-bottom: 1rem;
+      /* margin-bottom: 1rem; */
     }
     .tab {
       padding: 0.5rem 1rem;
@@ -24,8 +24,8 @@
     }
     .calculator {
       background: white;
-      padding: 2rem;
-      border-radius: 0 10px 10px 10px;
+      padding: 1rem;
+      border-radius: 5px;
       max-width: 600px;
       margin: 0 auto;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -35,13 +35,13 @@
       margin-top: 1rem;
     }
     input, select {
-      width: 100%;
+      max-width: 100%;
       padding: 0.5rem;
       font-size: 1rem;
       margin-top: 0.25rem;
     }
     button {
-      margin-top: 1.5rem;
+      /* margin-top: 1.5rem; */
       padding: 0.75rem;
       width: 100%;
       font-size: 1rem;

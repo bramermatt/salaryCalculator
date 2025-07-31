@@ -1,4 +1,4 @@
-const taxRate = 16.5;
+    const taxRate = 16.5;
     const insuranceRate = 18.7;
     const retirementRate = 3.0;
     const totalRate = taxRate + insuranceRate + retirementRate;
