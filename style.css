@@ -1,0 +1,65 @@
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f0f4f8;
+    }
+    h1 {
+      text-align: center;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .tab {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      background: #ccc;
+      border-radius: 5px 5px 0 0;
+      margin: 0 0.25rem;
+    }
+    .tab.active {
+      background: #007bff;
+      color: white;
+    }
+    .calculator {
+      background: white;
+      padding: 2rem;
+      border-radius: 0 10px 10px 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-top: 0.25rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      width: 100%;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .hidden {
+      display: none;
+    }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Salary Calculator</h1>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('grossToNet')">Estimate Net from Gross</div>
+    <div class="tab" onclick="switchTab('netToGross')">Estimate Gross from Net</div>
+  </div>
+
+  <div class="calculator" id="grossToNetTab">
+    <label for="salaryType">I want to enter:</label>
+    <select id="salaryType" onchange="toggleSalaryInput()">
+      <option value="hourly">Hourly Rate</option>
+      <option value="yearly">Yearly Salary</option>
+    </select>
+
+    <div id="hourlyInput">
+      <label for="hourly">Hourly Rate ($):</label>
+      <input type="number" id="hourly" placeholder="e.g. 25">
+    </div>
+
+    <div id="yearlyInput" class="hidden">
+      <label for="yearly">Yearly Salary ($):</label>
+      <input type="number" id="yearly" placeholder="e.g. 52000">
+    </div>
+
+    <p><strong>Pre-filled Deductions:</strong></p>
+    <ul>
+      <li>Taxes: 16.5%</li>
+      <li>Insurance: 18.7%</li>
+      <li>Retirement: 3%</li>
+    </ul>
+
+    <button onclick="calculateNet()">Calculate Bi-Weekly Net</button>
+
+    <div class="result" id="netResult"></div>
+  </div>
+
+  <div class="calculator hidden" id="netToGrossTab">
+    <label for="netPay">Net Bi-Weekly Paycheck ($):</label>
+    <input type="number" id="netPay" placeholder="e.g. 1115">
+
+    <p><strong>Using same deduction assumptions:</strong></p>
+    <ul>
+      <li>Taxes: 16.5%</li>
+      <li>Insurance: 18.7%</li>
+      <li>Retirement: 3%</li>
+      <li>Total Deductions: 38.2%</li>
+    </ul>
+
+    <button onclick="calculateGross()">Estimate Gross Pay</button>
+
+    <div class="result" id="grossResult"></div>
+  </div>
+
+
+
+
+    
+</body>
+<script src="script.js"></script>
+</html>
